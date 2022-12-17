@@ -1,0 +1,45 @@
+MSBA7027 Homework 2
+
+
+
+# Question
+
+**Load the dataset from HW2_house_dataset.csv. You will implement some tree- based methods to predict housing prices. Basic characteristics of the dataset are given as follows:**
+
+- **Problem type: supervised learning, regression**
+
+- **Response variable: selling price of houses (in log10 units)**
+
+- **Data variable name in R: “price”**
+
+- **Number of features: 17**
+
+- **Number of observations: 21,613**
+
+- **Task: use house attributes to predict sale price of a house**
+
+**Please perform the following tasks:**
+
+**(1) Set seed.**
+
+```{r}
+# Set seed
+set.seed(7027)
+```
+
+**(2) Perform stratified sampling, use 80% as training and 20% as testing. Do not touch the testing data until the last problem (7).**
+
+
+**(3) Perform random forest (RF) on the training data. Find the best tuning parameters and describe how you find them, and after that report the smallest cross-validated RMSE on the training data. Which four predictors are the most important? Obtain PDPs for these four predictors, describe them and provide possible explanations.**
+
+
+
+**(5) (Optional, completing this part will earn you up to 5 bonus points) Repeat (3) for Xgboost algorithm.**
+
+
+
+**(6) Are the four most important variables different in (3)-(4)? (or (3)-(5) if you have done (5)).**
+
+**(7) Among RF and GBM (and Xgboost, if you have done (5)) with their own best-tuning parameters,which one has the smallest cross-validated RMSE on the training data? Choose that method, refit the model with all of the training data, use that model to make prediction on the testing data, report the RMSE for the testing data. Is the obtained RMSE smaller or larger than the cross-validated RMSE?**
+
+
